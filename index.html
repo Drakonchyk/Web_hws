@@ -1,11 +1,293 @@
+<!-- LINK TO WIREFRAME -->
+<!-- https://whimsical.com/hw1-8LCWvSvDrgcwRL1YX6tTSY -->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HW1</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <title>HW2</title>
 </head>
 <body>
-    <p>Nastia</p>
+    <header>
+        <a href="#">
+            <img src="./icons/logo.jpeg" alt="Hounter Logo">
+            <span>Hounter</span>
+        </a>
+        <nav class="header-nav">
+            <button class="about" href="#">About</button>
+            <button class="article" href="#">Article</button>
+            <select class="property-select">
+                <option class="property-option">Properties</option>
+                <option class="property-option">House</option>
+                <option class="property-option">Villa</option>
+                <option class="property-option">Apartment</option>
+            </select>
+            <button class="sign-up-btn" href="#">Sign Up</button>
+        </nav>
+    </header>
+    <main class="main">
+        <section class="banner">
+            <div>
+                <h1 class="banner-header">
+                    Find The Place To Live Your Dreams Easily Here
+                </h1>
+                <p class="banner-text">
+                    Everything you need about finding your place to live will be here, where it will be easier for you
+                </p>
+                <div class="banner-actions">
+                    <div class="search-bar">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <input type="text" id="locationInput" placeholder="Find the location you want">
+                        <button id="searchButton">Search</button>
+                    </div>
+                </div>
+                <div class="partnership">
+                    <p class="partnership-text">
+                        Our Partnership
+                    </p>
+                    <div class="partner-images">
+                        <a href="https://www.traveloka.com/en-en">
+                            <img src="./icons/traveloka.jpeg" alt="Partner 1">
+                        </a>
+                        <a href="https://en.tiket.com/">
+                            <img src="./icons/tiket.jpeg" alt="Partner 2">
+                        </a>
+                        <a href="https://www.airbnb.com.ua/">
+                            <img src="./icons/airbnb.jpeg" alt="Partner 3">
+                        </a>
+                        <a href="https://www.tripadvisor.com/">
+                            <img src="./icons/advisor.jpeg" alt="Partner 4">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <img class="house-img" src="./backgrounds/house_background.jpg" alt="Background" height="200px" width="200px"/>
+        </section>
+        <section class="recommendation">
+            <p class="recommendation-header">Our Recommendation</p>
+            <h2 class="recommendation-text">Featured House</h2>
+            <div class="filter-buttons">
+                <input type="radio" id="house" name="property-type" class="house-button">
+                <label for="house"><i class="fas fa-house-alt"></i> House</label>
+            
+                <input type="radio" id="villa" name="property-type" class="villa-button">
+                <label for="villa"><i class="fas fa-villa-alt"></i> Villa</label>
+            
+                <input type="radio" id="apartment" name="property-type" class="apartment-button">
+                <label for="apartment"><i class="fas fa-apartment-alt"></i> Apartment</label>
+            </div>
+            <div class="arrow-buttons">
+                <i class="fas fa-arrow-left"></i>
+                <button class="left-button"></button>
+                <i class="fas fa-arrow-right"></i>
+                <button class="right-button"></button>
+            </div>
+            <article class="recommendations" id="recommendations">
+                <img src="./icons/house_photo.jpeg" alt="House Photos">
+                <h1>Roselands House</h1>
+                <p>$ 35.000.000</p>
+                <div class="owner">
+                    <img src="./icons/author.png" alt="Owner Photo" height="50px" width="50px">
+                    <h3 class="owner-name">Dianne Russell</h3>
+                    <p class="owner-description">Manager Director</p>
+                </div>  
+                <!-- and three more exact same houses, later info will be duplicated by js code -->
+            </article>
+        </section>
+        <section class="ready-sell" id="ready-sell">
+            <img class="yellow-background" src="./backgrounds/yellow.jpeg" alt="Background" height="200px" width="200px"/>
+            <img class="pink-background" src="./backgrounds/pink.jpeg" alt="Background" height="200px" width="200px"/>           
+            <img class="first-photo" src="./icons/house_photo.jpeg" alt="House Photos" height="50px" width="50px">
+            <img class="second-photo" src="./icons/house_photo.jpeg" alt="House Photos" height="50px" width="50px">
+            <img class="third-photo" src="./icons/house_photo.jpeg" alt="House Photos" height="50px" width="50px">
+            <video class="video" controls height="300px" width="200px">
+                <source src="./video/new_house.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <article class="ready-sell-description" id="ready-sell5-description">
+                <h3 class="tour"><strong>Let’s tour and see our house!</strong></h3>
+                <p class="promo">Houses recommended by our partners that have been curated to become the home of your dreams!</p>
+                <p class="details"><strong>House Detail</strong></p>
+                <table>
+                    <tr>
+                        <td class="bedrooms">
+                            <i class="fas fa-bed icon"></i>
+                            <p>4 Bedrooms</p>
+                        </td>
+                        <td class="bathrooms">
+                            <i class="fas fa-bath icon"></i>
+                            <p>2 Bathrooms</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="carports">
+                            <i class="fas fa-car icon"></i>
+                            <p>1 Carport</p>
+                        </td>
+                        <td class="floors">
+                            <i class="fas fa-building icon"></i>
+                            <p>2 Floors</p>
+                        </td>
+                    </tr>
+                </table>
+                <div class="owner-sell">
+                    <img src="./icons/author.png" alt="Owner Photo" height="50px" width="50px">
+                    <h3 class="owner-name-sell">Dianne Russell</h3>
+                    <p class="owner-description-sell">Manchester, Kentucky</p>
+                    <i class="fas fa-phone phone-icon"></i>
+                    <button class="contact-button">Contact Now</button>
+                </div>
+            </article>
+        </section>
+        <section class="reviews" id="reviews">
+            <div class="slider-container">
+                <div class="slide">
+                    <img src="./icons/house_photo.jpeg" alt="Review Photo 1" height="200px" width="200px">
+                    <div class="review-details">
+                        <h3 class="review-heading">Best! I got the house I wanted through Hounter</h3>
+                        <p class="review-text">Through this website I can get a house with the type and specifications I want very easily, without a complicated process to be able to find information on the house we want.</p>
+                        <div class="author-details">
+                            <img src="./icons/author.png" alt="Author Photo" height="50px" width="50px">
+                            <div class="author-info">
+                                <h3 class="author-name">Dianne Russell</p>
+                                <p class="author-description">Manager Director</p>
+                                
+                            </div>
+                        </div>
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <span class="score">4.6</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- And more slides made by js -->
+                <div class="dots-container">
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                    <!-- Add more dots -->
+                </div>
+            </div>
+        </section>
+        <section class="tips-tricks" id="tips-tricks">
+            <div class="section-header">
+                <p>See tips and tricks from our partnership</p>
+                <h3>Find out more about selling and buying homes</h3>
+                <button class="more-button">More Articles</button>
+            </div>
+            
+            <div class="article-previews">
+                <!-- Small previews on the left -->
+                <div class="small-preview">
+                    <img src="./icons/house_photo.jpeg" alt="Article Photo 1" height="200px" width="200px">
+                    <div class="author-article-details">
+                        <img src="./icons/author.png" alt="Author Icon" height="50px" width="50px">
+                        <div class="author-article-info">
+                            <p class="author-article-name">Dianne Russell</p>
+                            <p class="article-name">The things we need to check when we want to buy a house</p>
+                            <p class="upload-time"><i class="fas fa-clock"></i>4 min read | 25 Apr 2021</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="small-preview">
+                    <img src="./icons/house_photo.jpeg" alt="Article Photo 2" height="200px" width="200px">
+                    <div class="author-article-details">
+                        <img src="./icons/author.png" alt="Author Icon" height="50px" width="50px">
+                        <div class="author-article-info">
+                            <p class="author-article-name">Courtney Henry</p>
+                            <p class="article-name">7 Ways to distinguish the quality of the house we want to buy</p>
+                            <p class="upload-time"><i class="fas fa-clock"></i>6 min read | 24 Apr 2021</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="small-preview">
+                    <img src="./icons/house_photo.jpeg" alt="Article Photo 3" height="200px" width="200px">
+                    <div class="author-article-details">
+                        <img src="./icons/author.png" alt="Author Icon" height="50px" width="50px">
+                        <div class="author-article-info">
+                            <p class="author-article-name">Darlene Robertson</p>
+                            <p class="article-name">The best way to know the quality of the house we want to buy</p>
+                            <p class="upload-time"><i class="fas fa-clock"></i>2 min read | 24 Apr 2021</p>
+                        </div>
+                    </div>
+                </div>
+        
+                <!-- Big preview on the right -->
+                <div class="big-preview">
+                    <img src="./icons/house_photo.jpeg" alt="Article Photo 4" height="400px" width="400px">
+                    <div class="author-big-details">
+                        <img src="./icons/author.png" alt="Author Icon" height="50px" width="50px">
+                        <div class="author-big-info">
+                            <p class="author-big-name">Cameron Williamson</p>
+                            <p class="article-big-name">12 Things to know before buying a house</p>
+                            <p class="upload-big-time"><i class="fas fa-clock"></i>8 min read | 25 Apr 2021</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="subsribe">
+            <div class="subscribe-section">
+                <img class="subscribe-background" src="./backgrounds/subscribe_background.jpeg" alt="Background" />
+                <img class="subscribe-icon-1" src="./icons/author.png" alt="Some icons" height="20px" width="20px"/>
+                <img class="subscribe-icon-2" src="./icons/author.png" alt="Some icons" height="20px" width="20px"/>
+                <img class="subscribe-icon-3" src="./icons/author.png" alt="Some icons" height="20px" width="20px"/>
+                <img class="subscribe-icon-4" src="./icons/author.png" alt="Some icons" height="20px" width="20px"/>
+                <img class="subscribe-icon-5" src="./icons/author.png" alt="Some icons" height="20px" width="20px"/>
+                <img class="subscribe-icon-6" src="./icons/author.png" alt="Some icons" height="20px" width="20px"/>
+                <img class="subscribe-icon-7" src="./icons/author.png" alt="Some icons" height="20px" width="20px"/>
+                <img class="subscribe-icon-8" src="./icons/author.png" alt="Some icons" height="20px" width="20px"/>
+                <h2 class="subscribe-title">Subscribe For More Info and Updates from Hounter</h2>
+                <div class="subscribe-form">
+                    <i class="fas fa-envelope"></i>
+                    <input type="email" class="subscribe-input" placeholder="Your email here">
+                    <button class="subscribe-button">Subscribe Now</button>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="footer-logo">
+            <a href="#">
+                <img src="./icons/logo.jpeg" alt="Hounter Logo">
+                <span>Hounter</span>
+            </a>
+            <p>We provide information about properties such as houses, villas and apartments to help people find their dream home</p>
+        </div>
+    
+        <div class="social-icons">
+            <a href="https://facebook.com"><i class="fab fa-facebook"></i></a>
+            <a href="https://twitter.com"><i class="fab fa-twitter"></i></a>
+            <a href="https://instagram.com"><i class="fab fa-instagram"></i></a>
+        </div>
+    
+        <div class="footer-columns">
+            <div class="column-property">
+                <h3>Property</h3>
+                <a href="#">House</a><br>
+                <a href="#">Villa</a><br>
+                <a href="#">Apartment</a><br>
+            </div>
+
+            <div class="column-article">
+                <h3>Article</h3>
+                <a href="#">New Article</a><br>
+                <a href="#">Popular Article</a><br>
+                <a href="#">Most Read</a><br>
+                <a href="#">Tips & Tricks</a><br>
+            </div>
+
+            <div class="column-contact">
+                <h3>Contact</h3>
+                <p>2464 Royal Ln. Mesa, New Jersey 45463</p>
+                <p>(671) 555-0110</p>
+                <p>info@hounter.com</p>
+            </div>
+        </div>
+
+        <img class="background-img" src="./backgrounds/footer_bgnd_green.jpeg" alt="Background" height="200px" width="200px"/>
+        <img class="background-img" src="./backgrounds/footer_bgnd_blue.jpeg" alt="Background" height="200px" width="200px"/>
+    </footer>
 </body>
 </html>
