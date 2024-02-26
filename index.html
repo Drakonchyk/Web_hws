@@ -6,39 +6,43 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;500;700&display=swap">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <title>HW2</title>
 </head>
 <body>
     <header>
-        <a href="#">
+        <a class="logo-main" href="#">
             <img src="./icons/logo.jpeg" alt="Hounter Logo">
             <span>Hounter</span>
         </a>
         <nav class="header-nav">
-            <button class="about" href="#">About</button>
+            <button class="about" href="#">About us</button>
             <button class="article" href="#">Article</button>
             <select class="property-select">
-                <option class="property-option">Properties</option>
+                <option class="property-option">Property</option>
                 <option class="property-option">House</option>
                 <option class="property-option">Villa</option>
                 <option class="property-option">Apartment</option>
             </select>
-            <button class="sign-up-btn" href="#">Sign Up</button>
+            <button class="sign-up-btn" href="#">Sign Up!</button>
         </nav>
+        <img class="house-img" src="./backgrounds/house_background.jpg" alt="Background"/>
+
     </header>
     <main class="main">
         <section class="banner">
             <div>
                 <h1 class="banner-header">
-                    Find The Place To Live Your Dreams Easily Here
+                    Find The Place To Live <span>Your Dreams</span> Easily Here
                 </h1>
                 <p class="banner-text">
                     Everything you need about finding your place to live will be here, where it will be easier for you
                 </p>
                 <div class="banner-actions">
                     <div class="search-bar">
-                        <i class="fas fa-map-marker-alt"></i>
+                        <img class="map-pointer-icon" src="./icons/mapPoint.jpeg" alt="Background"/>
                         <input type="text" id="locationInput" placeholder="Find the location you want">
                         <button id="searchButton">Search</button>
                     </div>
@@ -48,22 +52,21 @@
                         Our Partnership
                     </p>
                     <div class="partner-images">
-                        <a href="https://www.traveloka.com/en-en">
-                            <img src="./icons/traveloka.jpeg" alt="Partner 1">
+                        <a  href="https://www.traveloka.com/en-en">
+                            <img class="partner-img" src="./icons/traveloka.jpeg" alt="Partner 1">
                         </a>
                         <a href="https://en.tiket.com/">
-                            <img src="./icons/tiket.jpeg" alt="Partner 2">
+                            <img class="partner-img" src="./icons/tiket.jpeg" alt="Partner 2">
                         </a>
                         <a href="https://www.airbnb.com.ua/">
-                            <img src="./icons/airbnb.jpeg" alt="Partner 3">
+                            <img class="partner-img" src="./icons/airbnb.jpeg" alt="Partner 3">
                         </a>
                         <a href="https://www.tripadvisor.com/">
-                            <img src="./icons/advisor.jpeg" alt="Partner 4">
+                            <img class="partner-img" src="./icons/advisor.jpeg" alt="Partner 4">
                         </a>
                     </div>
                 </div>
             </div>
-            <img class="house-img" src="./backgrounds/house_background.jpg" alt="Background" height="200px" width="200px"/>
         </section>
         <section class="recommendation">
             <p class="recommendation-header">Our Recommendation</p>
@@ -151,7 +154,7 @@
                         <div class="author-details">
                             <img src="./icons/author.png" alt="Author Photo" height="50px" width="50px">
                             <div class="author-info">
-                                <h3 class="author-name">Dianne Russell</p>
+                                <h3 class="author-name">Dianne Russell</h3>
                                 <p class="author-description">Manager Director</p>
                                 
                             </div>
@@ -250,17 +253,18 @@
     <footer class="footer">
         <div class="footer-logo">
             <a href="#">
-                <img src="./icons/logo.jpeg" alt="Hounter Logo">
+                <img class="footer-hounter" src="./icons/logo.jpeg" alt="Hounter Logo">
                 <span>Hounter</span>
             </a>
             <p>We provide information about properties such as houses, villas and apartments to help people find their dream home</p>
+            <div class="social-icons">
+                <a href="https://facebook.com"><img class="social-icon" src="./icons/facebook.jpeg" alt="Facebook Logo"></a>
+                <a href="https://twitter.com"><img class="social-icon" src="./icons/twitter.jpeg" alt="Twitter Logo"></a>
+                <a href="https://instagram.com"><img class="social-icon" src="./icons/insta.jpeg" alt="Instagram Logo"></a>
+            </div>
         </div>
     
-        <div class="social-icons">
-            <a href="https://facebook.com"><i class="fab fa-facebook"></i></a>
-            <a href="https://twitter.com"><i class="fab fa-twitter"></i></a>
-            <a href="https://instagram.com"><i class="fab fa-instagram"></i></a>
-        </div>
+
     
         <div class="footer-columns">
             <div class="column-property">
@@ -280,14 +284,13 @@
 
             <div class="column-contact">
                 <h3>Contact</h3>
-                <p>2464 Royal Ln. Mesa, New Jersey 45463</p>
-                <p>(671) 555-0110</p>
-                <p>info@hounter.com</p>
+                <p>2464 Royal Ln. Mesa, New Jersey 45463</p><br>
+                <p>(671) 555-0110</p><br>
+                <p>info@hounter.com</p><br>
             </div>
         </div>
-
-        <img class="background-img" src="./backgrounds/footer_bgnd_green.jpeg" alt="Background" height="200px" width="200px"/>
-        <img class="background-img" src="./backgrounds/footer_bgnd_blue.jpeg" alt="Background" height="200px" width="200px"/>
+        <img class="background-img-blue" src="./backgrounds/footer_bgnd_green.jpeg" alt="Background"/>
+        <img class="background-img-green" src="./backgrounds/footer_bgnd_blue.jpeg" alt="Background"/>
     </footer>
 </body>
 </html>
