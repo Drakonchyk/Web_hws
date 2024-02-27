@@ -69,36 +69,43 @@
             </div>
         </section>
         <section class="recommendation">
+            <img class="orange-line" src="./icons/orangeLine.png" alt="orange line">
             <p class="recommendation-header">Our Recommendation</p>
-            <h2 class="recommendation-text">Featured House</h2>
-            <div class="filter-buttons">
-                <input type="radio" id="house" name="property-type" class="house-button">
-                <label for="house"><i class="fas fa-house-alt"></i> House</label>
-            
-                <input type="radio" id="villa" name="property-type" class="villa-button">
-                <label for="villa"><i class="fas fa-villa-alt"></i> Villa</label>
-            
-                <input type="radio" id="apartment" name="property-type" class="apartment-button">
-                <label for="apartment"><i class="fas fa-apartment-alt"></i> Apartment</label>
-            </div>
+            <h3 class="recommendation-text">Featured House</h3>
+            <ul class="filter-buttons">
+                <li>
+                    <input type="radio" id="house" name="property-type" class="house-button">
+                    <label for="house"><i class="fas fa-house-alt"></i> House</label>
+                </li>
+                <li>
+                    <input type="radio" id="villa" name="property-type" class="villa-button">
+                    <label for="villa"><i class="fas fa-villa-alt"></i> Villa</label>
+                </li>
+                <li>
+                    <input type="radio" id="apartment" name="property-type" class="apartment-button">
+                    <label for="apartment"><i class="fas fa-apartment-alt"></i> Apartment</label>
+                </li>
+            </ul>
             <div class="arrow-buttons">
-                <i class="fas fa-arrow-left"></i>
-                <button class="left-button"></button>
-                <i class="fas fa-arrow-right"></i>
-                <button class="right-button"></button>
+                <div class="arrow left-arrow">
+                    <img src="./icons/Vector.svg" alt="left arrow">
+                </div>
+                <div class="arrow right-arrow">
+                    <img src="./icons/Vector1.svg" alt="right arrow">
+                </div>
             </div>
-            <article class="recommendations" id="recommendations">
-                <img src="./icons/house_photo.jpeg" alt="House Photos">
-                <h1>Roselands House</h1>
-                <p>$ 35.000.000</p>
-                <div class="owner">
-                    <img src="./icons/author.png" alt="Owner Photo" height="50px" width="50px">
-                    <h3 class="owner-name">Dianne Russell</h3>
-                    <p class="owner-description">Manager Director</p>
-                </div>  
-                <!-- and three more exact same houses, later info will be duplicated by js code -->
-            </article>
         </section>
+        <article class="recommendations" id="Recommendations">
+            <img src="./icons/house_photo.jpeg" alt="House Photos">
+            <h1>Roselands House</h1>
+            <p>$ 35.000.000</p>
+            <div class="owner">
+                <img src="./icons/author.png" alt="Owner Photo" height="50px" width="50px">
+                <h3 class="owner-name">Dianne Russell</h3>
+                <p class="owner-description">Manager Director</p>
+            </div>
+            <!-- and three more exact same houses, later info will be duplicated by js code -->
+        </article>
         <section class="ready-sell" id="ready-sell">
             <img class="yellow-background" src="./backgrounds/yellow.jpeg" alt="Background" height="200px" width="200px"/>
             <img class="pink-background" src="./backgrounds/pink.jpeg" alt="Background" height="200px" width="200px"/>           
@@ -232,21 +239,23 @@
         </section>
         <section class="subsribe">
             <div class="subscribe-section">
-                <img class="subscribe-background" src="./backgrounds/subscribe_background.jpeg" alt="Background" />
-                <img class="subscribe-icon-1" src="./icons/author.png" alt="Some icons" height="20px" width="20px"/>
-                <img class="subscribe-icon-2" src="./icons/author.png" alt="Some icons" height="20px" width="20px"/>
-                <img class="subscribe-icon-3" src="./icons/author.png" alt="Some icons" height="20px" width="20px"/>
-                <img class="subscribe-icon-4" src="./icons/author.png" alt="Some icons" height="20px" width="20px"/>
-                <img class="subscribe-icon-5" src="./icons/author.png" alt="Some icons" height="20px" width="20px"/>
-                <img class="subscribe-icon-6" src="./icons/author.png" alt="Some icons" height="20px" width="20px"/>
-                <img class="subscribe-icon-7" src="./icons/author.png" alt="Some icons" height="20px" width="20px"/>
-                <img class="subscribe-icon-8" src="./icons/author.png" alt="Some icons" height="20px" width="20px"/>
-                <h2 class="subscribe-title">Subscribe For More Info and Updates from Hounter</h2>
+                <img class="subscribe-icon-1" src="./icons/avatar-1.jpg" alt="Some icons"/>
+                <img class="subscribe-icon-2" src="./icons/avatar-2.jpg" alt="Some icons"/>
+                <img class="subscribe-icon-3" src="./icons/avatar-6.jpg" alt="Some icons"/>
+                <img class="subscribe-icon-4" src="./icons/avatar-9.jpg" alt="Some icons"/>
+                <img class="subscribe-icon-5" src="./icons/chair.jpg" alt="Some icons"/>
+                <img class="subscribe-icon-6" src="./icons/chair-2.jpg" alt="Some icons"/>
+                <img class="subscribe-icon-7" src="./icons/house-end.jpg" alt="Some icons"/>
+                <img class="subscribe-icon-8" src="./icons/house-modern.jpg" alt="Some icons"/>
+                <p class="subscribe-title">Subscribe For More Info And Updates from Hounter</p>
                 <div class="subscribe-form">
-                    <i class="fas fa-envelope"></i>
-                    <input type="email" class="subscribe-input" placeholder="Your email here">
-                    <button class="subscribe-button">Subscribe Now</button>
+                    <img class="mail" src="./icons/mail.jpeg" alt="Email">
+                    <label>
+                        <input type="email" id="subscribeInput" placeholder="Your email here">
+                    </label>
+                    <button id="subscribeButton">Subscribe Now</button>
                 </div>
+                <img class="subscribe-background" src="./backgrounds/subscribe_background.jpeg" alt="Background" />
             </div>
         </section>
     </main>
@@ -263,7 +272,6 @@
                 <a href="https://instagram.com"><img class="social-icon" src="./icons/insta.jpeg" alt="Instagram Logo"></a>
             </div>
         </div>
-    
 
     
         <div class="footer-columns">
@@ -289,8 +297,11 @@
                 <p>info@hounter.com</p><br>
             </div>
         </div>
+
+    </footer>
+    <div class="background-images">
         <img class="background-img-blue" src="./backgrounds/footer_bgnd_green.jpeg" alt="Background"/>
         <img class="background-img-green" src="./backgrounds/footer_bgnd_blue.jpeg" alt="Background"/>
-    </footer>
+    </div>
 </body>
 </html>

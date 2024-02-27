@@ -1,3 +1,4 @@
+/*header*/
 header {
     display: flex;
     justify-content: space-between;
@@ -29,7 +30,7 @@ header {
     width: 36px;
     height: 36px;
     top: 45px;
-    left: 120px;
+    left: 8%;
     border-radius: 4px 4px 24px 4px;
 }
 
@@ -67,6 +68,13 @@ button.sign-up-btn {
     cursor: pointer;
     background-color: #d1fae5;
     color: #047857;
+    transition: background 0.3s ease;
+
+}
+
+button.sign-up-btn:hover{
+    background-color: #10B981;
+    color: white;
 
 }
 
@@ -102,7 +110,10 @@ header, button, select {
 
 .main {
     position: relative;
+    font-family: 'Lexend', sans-serif;
 }
+
+/*banner*/
 .banner{
     margin-left: 8%;
 }
@@ -121,9 +132,8 @@ header, button, select {
 
 .banner-header span {
     font-weight: 700;
-    color: transparent;
-    -webkit-text-stroke-width: 1px;
-    -webkit-text-stroke-color: #1B1C57;
+    color: #fff;
+    text-shadow: -1px -1px 0 #1B1C57, 1px -1px 0 #1B1C57, -1px 1px 0 #1B1C57, 1px 1px 0 #1B1C57;
 }
 
 .banner-text {
@@ -177,6 +187,12 @@ header, button, select {
     border-radius: 32px;
     gap: 4px;
     cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+#searchButton:hover {
+    background-color: #d1fae5;
+    color: #047857;
 }
 
 .map-pointer-icon {
@@ -214,16 +230,350 @@ header, button, select {
     z-index: 1;
 }
 
+/*recommendations*/
+.recommendation{
+    margin-top: 18%;
+    display: flex;
+    align-items: center;
+}
+
+.orange-line {
+    margin-left: 8%;
+    width: 32px;
+    height: 1px;
+    margin-bottom: 6%;
+}
+
+.recommendation-header{
+    margin-left: 1%;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 18px;
+    letter-spacing: 0;
+    text-align: left;
+    color: #F59E0B;
+    margin-bottom: 7%;
+}
+
+.recommendation-text {
+    margin-top: 2%;
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 40px;
+    letter-spacing: 0;
+    text-align: left;
+    margin-left: -10%;
+    white-space: nowrap;
+}
+
+.filter-buttons {
+    list-style-type: none;
+    margin-left: 10%;
+    white-space: nowrap;
+    display: flex;
+    align-items: center;
+}
+
+.filter-buttons label {
+    font-family: 'Lexend', sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 28px;
+    letter-spacing: 0;
+    width: auto;
+    height: auto;
+    padding: 12px 24px;
+    border-radius: 32px;
+    gap: 8px;
+    border: 1px solid #E0E3EB;
+    cursor: pointer;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    color: #888B97;
+    transition: background 0.3s ease;
+    margin-right: 10%;
+}
+
+.filter-buttons input[type="radio"] {
+    position: absolute;
+    opacity: 0.01;
+    z-index: 100;
+}
+
+.filter-buttons input[type="radio"]:checked + label,
+.Checked + label {
+    background: #D1FAE5;
+    color: #10B981;
+    border: none;
+}
+
+.filter-buttons label:hover {
+    background: #DDD;
+}
+
+/* Style for arrow buttons */
+/* Style for arrow buttons */
+.arrow-buttons {
+    margin-left: 20%;
+    white-space: nowrap;
+    display: flex; /* Ensure the children are displayed in a row */
+}
+
+.arrow {
+    width: 62px;
+    height: 30px;
+    padding: 12px 16px 12px 16px;
+    cursor: pointer;
+    border-radius: 32px;
+    gap: 4px;
+    background-color: #E0E3EB;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background 0.3s ease;
+    margin: 7%;
+}
+
+.left-arrow img,
+.right-arrow img {
+    width: 8px; /* Set your desired width for the image */
+    height: 16px; /* Set your desired height for the image */
+}
+
+/* Style for hover effect */
+.arrow:hover {
+    background: #10B981;
+}
+/* Style for the recommendations section */
+.recommendations {
+    margin-top: 20px;
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+}
+
+.recommendations img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.recommendations h1 {
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.recommendations p {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.owner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.owner img {
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.owner-name {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.owner-description {
+    font-size: 14px;
+}
+/*subscribe*/
+.subsribe {
+    display: flex;
+}
+
+.subscribe-section {
+    margin-bottom: 10%;
+    margin-left: 8%;
+}
+
+.subscribe-background {
+    width: 1200px;
+    height: 312px;
+    border-radius: 32px;
+    z-index: -1;
+}
+
+.subscribe-icon-5{
+    width: 81px;
+    height: 81px;
+    border-radius: 24px;
+    border: 2px solid #fff;
+    bottom: -25%;
+    left: -11%;
+    position: relative;
+    z-index: 3;
+}
+
+.subscribe-icon-1{
+    width: 36px;
+    height: 36px;
+    border-radius: 24px;
+    border: 2px solid #fff;
+    left: 81%;
+    bottom: -40%;
+    position: relative;
+    z-index: 3;
+}
+
+.subscribe-icon-2{
+    width: 36px;
+    height: 36px;
+    border-radius: 24px;
+    border: 2px solid #fff;
+    left: 87%;
+    bottom: -31%;
+    position: relative;
+    z-index: 3;
+}
+.subscribe-icon-3{
+    width: 36px;
+    height: 36px;
+    border-radius: 24px;
+    border: 2px solid #fff;
+    bottom: -47%;
+    left: -2%;
+    position: relative;
+    z-index: 3;
+}
+.subscribe-icon-4{
+    width: 36px;
+    height: 36px;
+    border-radius: 24px;
+    border: 2px solid #fff;
+    bottom: -21%;
+    left: 6%;
+    position: relative;
+    z-index: 3;
+}
+.subscribe-icon-6{
+    width: 55px;
+    height: 55px;
+    border-radius: 24px;
+    border: 2px solid #fff;
+    right: -68%;
+    bottom: -60%;
+    position: relative;
+    z-index: 3;
+}
+.subscribe-icon-7{
+    width: 54px;
+    height: 54px;
+    border-radius: 24px;
+    border: 2px solid #fff;
+    left: -10%;
+    bottom: -54%;
+    position: relative;
+    z-index: 3;
+}
+
+.subscribe-icon-8{
+    width: 70px;
+    height: 70px;
+    border-radius: 24px;
+    border: 2px solid #fff;
+    right: -46%;
+    bottom: -23%;
+    position: relative;
+    z-index: 3;
+}
+
+.subscribe-title{
+    width: 490px;
+    height: 96px;
+    font-family: 'Lexend', sans-serif;
+    color: #1B1C57;
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 48px;
+    letter-spacing: 0;
+    text-align: center;
+    position: relative;
+    margin-left: 29%;
+    z-index: 3;
+}
+
+.subscribe-form {
+    width: 496px;
+    height: fit-content;
+    padding: 4px 4px 4px 24px;
+    border-radius: 32px;
+    border: 1px solid #E0E3EB;
+    background: #FFFFFF;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-left: 28%;
+    margin-bottom: -20%;
+    z-index: 2;
+    position: relative;
+}
+
+#subscribeInput {
+    font-family: 'Lexend', sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 22px;
+    letter-spacing: 0;
+    text-align: left;
+    border: none;
+    padding: 10px;
+    border-radius: 0;
+    z-index: 3;
+    position: relative;
+}
+
+#subscribeButton {
+    position: relative;
+    background-color: #10B981;
+    width: 129px;
+    height: 46px;
+    padding: 12px 16px 12px 16px;
+    border-radius: 32px;
+    gap: 4px;
+    cursor: pointer;
+    white-space: nowrap;
+    margin-left: 24%;
+    z-index: 3;
+    transition: background 0.3s ease;
+}
+
+#subscribeButton:hover {
+    background-color: #d1fae5;
+    color: #047857;
+}
+
+.mail {
+    position: relative;
+    width: 20px;
+    height: 16px;
+    z-index: 3;
+}
+
 
 /*footer*/
 .footer {
     display: flex;
     margin-left: 8%;
     font-family: 'Lexend', sans-serif;
+    z-index: 3;
 }
 
 .footer-logo a {
-    text-decoration: none; /* Remove underline for the link */
+    text-decoration: none;
 }
 
 .footer-logo span {
@@ -279,7 +629,7 @@ header, button, select {
 .column-article,
 .column-contact {
     flex: 1;
-    margin-right: 8%;
+    margin-right: 10%;
     position: absolute;
 }
 
@@ -327,22 +677,22 @@ header, button, select {
 
 .background-img-blue {
     display: flex;
-    position: absolute;
-    left: 0;
-    bottom: 0;
+    position: relative;
+    right: 0;
+    bottom: 40%;
     width: 438px;
     height: 494px;
     opacity: 0.3;
-    z-index: -1;
+    z-index: 2;
 }
 
 .background-img-green{
     display: flex;
-    position: absolute;
-    left: 1%;
-    bottom: 1%;
+    position: relative;
+    right: -10%;
+    bottom: -5%;
     width: 438px;
     height: 494px;
     opacity: 0.3;
-    z-index: -1;
+    z-index: 1;
 }
