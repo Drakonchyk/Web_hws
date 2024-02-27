@@ -28,7 +28,7 @@
             </select>
             <button class="sign-up-btn" href="#">Sign Up!</button>
         </nav>
-        <img class="house-img" src="./backgrounds/house_background.jpg" alt="Background"/>
+        <img class="house-img" src="./backgrounds/main.png" alt="Background"/>
 
     </header>
     <main class="main">
@@ -44,7 +44,10 @@
                     <div class="search-bar">
                         <img class="map-pointer-icon" src="./icons/mapPoint.jpeg" alt="Background"/>
                         <input type="text" id="locationInput" placeholder="Find the location you want">
-                        <button id="searchButton">Search</button>
+                        <button id="searchButton">
+                            Search
+                            <img class="right-arrow" src="./icons/Vector1.svg" alt="Search Icon">
+                        </button>
                     </div>
                 </div>
                 <div class="partnership">
@@ -75,15 +78,22 @@
             <ul class="filter-buttons">
                 <li>
                     <input type="radio" id="house" name="property-type" class="house-button">
-                    <label for="house"><i class="fas fa-house-alt"></i> House</label>
+                    <label for="house">
+                        <img class="house-icon" src="./icons/house-icon.jpeg">
+                        House
+                    </label>
                 </li>
                 <li>
                     <input type="radio" id="villa" name="property-type" class="villa-button">
-                    <label for="villa"><i class="fas fa-villa-alt"></i> Villa</label>
+                    <label for="villa">
+                        <img class="villa-icon" src="./icons/villa-icon.jpeg">
+                        Villa</label>
                 </li>
                 <li>
                     <input type="radio" id="apartment" name="property-type" class="apartment-button">
-                    <label for="apartment"><i class="fas fa-apartment-alt"></i> Apartment</label>
+                    <label for="apartment">
+                        <img class="villa-icon" src="./icons/apartment-icon.jpeg">
+                        Apartment</label>
                 </li>
             </ul>
             <div class="arrow-buttons">
@@ -96,142 +106,294 @@
             </div>
         </section>
         <article class="recommendations" id="Recommendations">
-            <img src="./icons/house_photo.jpeg" alt="House Photos">
-            <h1>Roselands House</h1>
-            <p>$ 35.000.000</p>
-            <div class="owner">
-                <img src="./icons/author.png" alt="Owner Photo" height="50px" width="50px">
-                <h3 class="owner-name">Dianne Russell</h3>
-                <p class="owner-description">Manager Director</p>
-            </div>
-            <!-- and three more exact same houses, later info will be duplicated by js code -->
-        </article>
-        <section class="ready-sell" id="ready-sell">
-            <img class="yellow-background" src="./backgrounds/yellow.jpeg" alt="Background" height="200px" width="200px"/>
-            <img class="pink-background" src="./backgrounds/pink.jpeg" alt="Background" height="200px" width="200px"/>           
-            <img class="first-photo" src="./icons/house_photo.jpeg" alt="House Photos" height="50px" width="50px">
-            <img class="second-photo" src="./icons/house_photo.jpeg" alt="House Photos" height="50px" width="50px">
-            <img class="third-photo" src="./icons/house_photo.jpeg" alt="House Photos" height="50px" width="50px">
-            <video class="video" controls height="300px" width="200px">
-                <source src="./video/new_house.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-            </video>
-            <article class="ready-sell-description" id="ready-sell5-description">
-                <h3 class="tour"><strong>Let’s tour and see our house!</strong></h3>
-                <p class="promo">Houses recommended by our partners that have been curated to become the home of your dreams!</p>
-                <p class="details"><strong>House Detail</strong></p>
-                <table>
-                    <tr>
-                        <td class="bedrooms">
-                            <i class="fas fa-bed icon"></i>
-                            <p>4 Bedrooms</p>
-                        </td>
-                        <td class="bathrooms">
-                            <i class="fas fa-bath icon"></i>
-                            <p>2 Bathrooms</p>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="carports">
-                            <i class="fas fa-car icon"></i>
-                            <p>1 Carport</p>
-                        </td>
-                        <td class="floors">
-                            <i class="fas fa-building icon"></i>
-                            <p>2 Floors</p>
-                        </td>
-                    </tr>
-                </table>
-                <div class="owner-sell">
-                    <img src="./icons/author.png" alt="Owner Photo" height="50px" width="50px">
-                    <h3 class="owner-name-sell">Dianne Russell</h3>
-                    <p class="owner-description-sell">Manchester, Kentucky</p>
-                    <i class="fas fa-phone phone-icon"></i>
-                    <button class="contact-button">Contact Now</button>
+            <div class="house_sale">
+                <img src="./icons/buy-1.jpg" alt="House Photos">
+                <h1>Roselands House</h1>
+                <p class="price">$ 35.000.000</p>
+                <div class="owner">
+                    <img src="./icons/avatar-6.jpg" alt="Owner Photo">
+                    <div class="owner-details">
+                        <h3 class="owner-name">Dianne Russell</h3>
+                        <p class="owner-description">Manchester, Kentucky</p>
+                    </div>
                 </div>
-            </article>
+            </div>
+            <div class="house_sale">
+                <img src="./icons/buy-2.jpg" alt="House Photos">
+                <h1>Woodlandside</h1>
+                <p class="price">$ 20.000.000</p>
+                <div class="owner">
+                    <img src="./icons/avatar-3.jpg" alt="Owner Photo">
+                    <div class="owner-details">
+                        <h3 class="owner-name">Robert Fox</h3>
+                        <p class="owner-description">Dr. San Jose, South Dakota</p>
+                    </div>
+                </div>
+            </div>
+            <div class="house_sale">
+                <img src="./icons/buy-3.jpg" alt="House Photos">
+                <h1>The Old Lighthouse</h1>
+                <p class="price">$ 44.000.000</p>
+                <div class="owner">
+                    <img src="./icons/avatar-9.jpg" alt="Owner Photo">
+                    <div class="owner-details">
+                        <h3 class="owner-name">Ronald Richards</h3>
+                        <p class="owner-description">Santa Ana, Illinois</p>
+                    </div>
+                </div>
+            </div>
+            <div class="house_sale">
+                <img src="./icons/buy-4.jpg" alt="House Photos">
+                <h1>Cosmo's House</h1>
+                <p class="price">$ 22.000.000</p>
+                <div class="owner">
+                    <img src="./icons/avatar-12.jpg" alt="Owner Photo">
+                    <div class="owner-details">
+                        <h3 class="owner-name">Jenny Wilson</h3>
+                        <p class="owner-description">Preston Rd. Inglewood, Maine 98380</p>
+                    </div>
+                </div>
+            </div>
+
+        </article>
+        <div class="ready-sell-text">
+            <img class="orange-line" src="./icons/orangeLine.png" alt="orange line">
+            <p class="recommendation-header">Ready to sell!</p>
+        </div>
+
+        <section class="ready-sell" id="ready-sell">
+            <div class="content-container">
+                <article class="ready-sell-description" id="ready-sell5-description">
+                    <h3 class="tour"><strong>Let’s tour and see our house!</strong></h3>
+                    <p class="promo">Houses recommended by our partners that have been curated to become the home of your dreams!</p>
+                    <p class="details"><strong>House Detail</strong></p>
+                    <table>
+                        <tr>
+                            <td>
+                                <div class="cell">
+                                    <img class="icon-sale" src="./icons/bed_icon.jpeg">
+                                    <p>4 Bedrooms</p>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="cell">
+                                    <img class="icon-sale" src="./icons/bath_icon.jpeg">
+                                    <p>2 Bathrooms</p>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="cell">
+                                    <img class="icon-sale" src="./icons/parking_icon.jpeg">
+                                    <p>1 Carport</p>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="cell">
+                                    <img class="icon-sale" src="./icons/stairs_icon.jpeg">
+                                    <p>2 Floors</p>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                    <svg width="440" height="2" viewBox="0 0 440 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="440" height="2" fill="#F0F3FD"/>
+                    </svg>
+                    <div class="owner-sell">
+                        <img src="./icons/avatar-6.jpg" alt="Owner Photo" height="50px" width="50px">
+                        <div class="owner-sale-details">
+                            <h3 class="owner-name-sell">Dianne Russell</h3>
+                            <p class="owner-description-sell">Manchester, Kentucky</p>
+                            <button class="contact-button" id="contactButton">
+                                <svg width="16" height="20" viewBox="0 0 16 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M4.38439 0.479124C4.90949 0.320805 5.47298 0.347107 5.98104 0.553653C6.48911 0.760198 6.91111 1.13453 7.1768 1.61432L7.26679 1.79312L8.05999 3.55832C8.30108 4.09411 8.37934 4.68894 8.28504 5.26885C8.19074 5.84876 7.92803 6.38814 7.52959 6.81992L7.37119 6.97832L6.11839 8.14592C5.8928 8.35952 6.06199 9.18633 6.87919 10.5999C7.61239 11.8719 8.21119 12.4659 8.50399 12.4983H8.55559L8.61919 12.4863L11.0792 11.7339C11.4098 11.6325 11.7626 11.6285 12.0955 11.7224C12.4283 11.8162 12.727 12.004 12.956 12.2631L13.0664 12.4011L14.6936 14.6571C15.0129 15.0992 15.1721 15.6368 15.1451 16.1814C15.118 16.7261 14.9063 17.2453 14.5448 17.6535L14.3984 17.8047L13.7468 18.4215C13.1627 18.9746 12.4322 19.3484 11.6419 19.4984C10.8516 19.6483 10.0349 19.5682 9.28879 19.2675C6.96679 18.3315 4.85719 16.1931 2.94079 12.8739C1.02079 9.54633 0.222795 6.64592 0.579195 4.16192C0.687148 3.41091 0.996527 2.70316 1.47446 2.11388C1.9524 1.52459 2.58104 1.07578 3.2936 0.815124L3.52519 0.738324L4.38439 0.479124Z" fill="white"/>
+                                </svg>
+                                Contact Now
+                            </button>
+                        </div>
+                    </div>
+                </article>
+                <div class="media-container">
+                    <div class="video-container">
+                        <video class="video" controls height="300px" width="200px">
+                            <source src="./video/new_house.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                        <div class="play-button" id="playButton">
+                            <img class="play-icon" src="./icons/play_icon.jpeg">
+                        </div>
+                    </div>
+                    <div class="img-container">
+                        <img class="first-photo" src="./icons/sofa.jpg" alt="House Photos">
+                        <img class="second-photo" src="./icons/vase.jpg" alt="House Photos">
+                        <img class="third-photo" src="./icons/orange-chair.jpg" alt="House Photos">
+                    </div>
+                </div>
+            </div>
         </section>
+        <div class="reviews-promo">
+            <img class="orange-line-centered" src="./icons/orangeLine.png" alt="orange line">
+            <p class="review-header-centered">See Our Review</p>
+            <h3 class="review-title">What Our User Say About Us</h3>
+        </div>
         <section class="reviews" id="reviews">
             <div class="slider-container">
                 <div class="slide">
-                    <img src="./icons/house_photo.jpeg" alt="Review Photo 1" height="200px" width="200px">
+                    <img class="house-photo" src="./icons/rev-1.jpg" alt="Review Photo 1" height="200px" width="200px">
+                    <div class="review-details">
+                        <h3 class="review-heading">My house sold out fast!</h3>
+                        <p class="review-text">I was finally able to sell my house quickly through Hounter by immediately setting me up with people who wanted my house. I also do not get a discount from the sale of my house. Awesome!</p>
+                        <div class="author-details">
+                            <img src="./icons/avatar-5.jpg" alt="Author Photo" height="50px" width="50px">
+                            <div class="author-info">
+                                <h3 class="author-name">Courtney Henry</h3>
+                                <p class="author-description">CEO Andarafish</p>
+                            </div>
+                        </div>
+                        <div class="rating">
+                            <img class="star-icon" src="./icons/star_icon.jpeg">
+                            <span class="score">4.3</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="slide">
+                    <img class="house-photo" src="./icons/rev-2.jpg" alt="Review Photo 1" height="200px" width="200px">
                     <div class="review-details">
                         <h3 class="review-heading">Best! I got the house I wanted through Hounter</h3>
                         <p class="review-text">Through this website I can get a house with the type and specifications I want very easily, without a complicated process to be able to find information on the house we want.</p>
                         <div class="author-details">
-                            <img src="./icons/author.png" alt="Author Photo" height="50px" width="50px">
+                            <img src="./icons/avatar-6.jpg" alt="Author Photo" height="50px" width="50px">
                             <div class="author-info">
                                 <h3 class="author-name">Dianne Russell</h3>
                                 <p class="author-description">Manager Director</p>
-                                
                             </div>
                         </div>
                         <div class="rating">
-                            <i class="fas fa-star"></i>
+                            <img class="star-icon" src="./icons/star_icon.jpeg">
                             <span class="score">4.6</span>
                         </div>
                     </div>
                 </div>
-                <!-- And more slides made by js -->
-                <div class="dots-container">
-                    <span class="dot" onclick="currentSlide(1)"></span>
-                    <span class="dot" onclick="currentSlide(2)"></span>
-                    <!-- Add more dots -->
+                <div class="slide">
+                    <img class="house-photo" src="./icons/art-3.jpg" alt="Review Photo 1" height="200px" width="200px">
+                    <div class="review-details">
+                        <h3 class="review-heading">Through the Hounter, I can get a house for myself</h3>
+                        <p class="review-text">By looking for information about what kind of house we want, we managed to get the house we wanted very quickly, and directly connected with the seller to be able to ask about the details, very helpful!</p>
+                        <div class="author-details">
+                            <img src="./icons/avatar-20.jpg" alt="Author Photo" height="50px" width="50px">
+                            <div class="author-info">
+                                <h3 class="author-name">Esther Howard</h3>
+                                <p class="author-description">Head of Marketing</p>
+                            </div>
+                        </div>
+                        <div class="rating">
+                            <img class="star-icon" src="./icons/star_icon.jpeg">
+                            <span class="score">4.6</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="dot-buttons">
+                <div class="dot" onclick="currentSlide(1)">
+                    <svg width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="4" cy="4" r="4" fill="#E0E3EB"/>
+                    </svg>
+                </div>
+                <div class="dot" onclick="currentSlide(2)">
+                    <svg width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="4" cy="4" r="4" fill="#3C4563"/>
+                    </svg>
+                </div>
+                <div class="dot" onclick="currentSlide(3)">
+                    <svg width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="4" cy="4" r="4" fill="#E0E3EB"/>
+                    </svg>
                 </div>
             </div>
         </section>
+        <div class="reviews-promo">
+            <img class="orange-line-centered" src="./icons/orangeLine.png" alt="orange line">
+            <p class="review-header-centered">See tips and tricks from our partnership</p>
+            <h3 class="review-title">Find out more about selling and buying homes</h3>
+            <button class="more-button" id="moreButton">More Articles</button>
+        </div>
         <section class="tips-tricks" id="tips-tricks">
-            <div class="section-header">
-                <p>See tips and tricks from our partnership</p>
-                <h3>Find out more about selling and buying homes</h3>
-                <button class="more-button">More Articles</button>
-            </div>
-            
             <div class="article-previews">
                 <!-- Small previews on the left -->
-                <div class="small-preview">
-                    <img src="./icons/house_photo.jpeg" alt="Article Photo 1" height="200px" width="200px">
+                <div class="small-preview-1">
+                    <img class="small-img" src="./icons/art-1.jpg" alt="Article Photo 1">
                     <div class="author-article-details">
-                        <img src="./icons/author.png" alt="Author Icon" height="50px" width="50px">
                         <div class="author-article-info">
+                            <img class="author-icon" src="./icons/avatar-6.jpg" alt="Author Icon">
                             <p class="author-article-name">Dianne Russell</p>
+                        </div>
+                        <div class="article">
                             <p class="article-name">The things we need to check when we want to buy a house</p>
-                            <p class="upload-time"><i class="fas fa-clock"></i>4 min read | 25 Apr 2021</p>
+                            <p class="upload-time">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M9.99 0C4.47 0 0 4.48 0 10C0 15.52 4.47 20 9.99 20C15.52 20 20 15.52 20 10C20 4.48 15.52 0 9.99 0ZM14 14C13.9075 14.0927 13.7976 14.1663 13.6766 14.2164C13.5557 14.2666 13.426 14.2924 13.295 14.2924C13.164 14.2924 13.0343 14.2666 12.9134 14.2164C12.7924 14.1663 12.6825 14.0927 12.59 14L9.3 10.71C9.20551 10.6174 9.13034 10.5069 9.07885 10.3851C9.02735 10.2632 9.00055 10.1323 9 10V6C9 5.45 9.45 5 10 5C10.55 5 11 5.45 11 6V9.59L14 12.59C14.39 12.98 14.39 13.61 14 14Z" fill="#888B97"/>
+                                </svg>
+                                4 min read | 25 Apr 2021
+                            </p>
                         </div>
                     </div>
                 </div>
-                <div class="small-preview">
-                    <img src="./icons/house_photo.jpeg" alt="Article Photo 2" height="200px" width="200px">
+                <div class="small-preview-2">
+                    <img class="small-img" src="./icons/art-2.jpg" alt="Article Photo 2">
                     <div class="author-article-details">
-                        <img src="./icons/author.png" alt="Author Icon" height="50px" width="50px">
                         <div class="author-article-info">
+                            <img class="author-icon" src="./icons/avatar-1.jpg" alt="Author Icon">
                             <p class="author-article-name">Courtney Henry</p>
+                        </div>
+                        <div class="article">
                             <p class="article-name">7 Ways to distinguish the quality of the house we want to buy</p>
-                            <p class="upload-time"><i class="fas fa-clock"></i>6 min read | 24 Apr 2021</p>
+                            <p class="upload-time">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M9.99 0C4.47 0 0 4.48 0 10C0 15.52 4.47 20 9.99 20C15.52 20 20 15.52 20 10C20 4.48 15.52 0 9.99 0ZM14 14C13.9075 14.0927 13.7976 14.1663 13.6766 14.2164C13.5557 14.2666 13.426 14.2924 13.295 14.2924C13.164 14.2924 13.0343 14.2666 12.9134 14.2164C12.7924 14.1663 12.6825 14.0927 12.59 14L9.3 10.71C9.20551 10.6174 9.13034 10.5069 9.07885 10.3851C9.02735 10.2632 9.00055 10.1323 9 10V6C9 5.45 9.45 5 10 5C10.55 5 11 5.45 11 6V9.59L14 12.59C14.39 12.98 14.39 13.61 14 14Z" fill="#888B97"/>
+                                </svg>
+                                6 min read | 24 Apr 2021
+                            </p>
                         </div>
                     </div>
                 </div>
-                <div class="small-preview">
-                    <img src="./icons/house_photo.jpeg" alt="Article Photo 3" height="200px" width="200px">
+                <div class="small-preview-3">
+                    <img class="small-img" src="./icons/art-3.jpg" alt="Article Photo 3">
                     <div class="author-article-details">
-                        <img src="./icons/author.png" alt="Author Icon" height="50px" width="50px">
                         <div class="author-article-info">
+                            <img class="author-icon" src="./icons/avatar-11.jpg" alt="Author Icon">
                             <p class="author-article-name">Darlene Robertson</p>
+                        </div>
+                        <div class="article-review">
                             <p class="article-name">The best way to know the quality of the house we want to buy</p>
-                            <p class="upload-time"><i class="fas fa-clock"></i>2 min read | 24 Apr 2021</p>
+                            <p class="upload-time">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M9.99 0C4.47 0 0 4.48 0 10C0 15.52 4.47 20 9.99 20C15.52 20 20 15.52 20 10C20 4.48 15.52 0 9.99 0ZM14 14C13.9075 14.0927 13.7976 14.1663 13.6766 14.2164C13.5557 14.2666 13.426 14.2924 13.295 14.2924C13.164 14.2924 13.0343 14.2666 12.9134 14.2164C12.7924 14.1663 12.6825 14.0927 12.59 14L9.3 10.71C9.20551 10.6174 9.13034 10.5069 9.07885 10.3851C9.02735 10.2632 9.00055 10.1323 9 10V6C9 5.45 9.45 5 10 5C10.55 5 11 5.45 11 6V9.59L14 12.59C14.39 12.98 14.39 13.61 14 14Z" fill="#888B97"/>
+                                </svg>
+                                2 min read | 24 Apr 2021
+                            </p>
                         </div>
                     </div>
                 </div>
         
                 <!-- Big preview on the right -->
                 <div class="big-preview">
-                    <img src="./icons/house_photo.jpeg" alt="Article Photo 4" height="400px" width="400px">
+                    <img class="big-img" src="./icons/big-art.jpg" alt="Article Photo 4">
                     <div class="author-big-details">
-                        <img src="./icons/author.png" alt="Author Icon" height="50px" width="50px">
+                        <div class="author-article-info">
+                            <img class="author-icon" src="./icons/avatar-14.jpg" alt="Author Icon" >
+                            <p class="author-article-name">Cameron Williamson</p>
+                        </div>
                         <div class="author-big-info">
-                            <p class="author-big-name">Cameron Williamson</p>
                             <p class="article-big-name">12 Things to know before buying a house</p>
-                            <p class="upload-big-time"><i class="fas fa-clock"></i>8 min read | 25 Apr 2021</p>
+                            <p class="review">Want to buy a house but are unsure about what we should know, here I will try to explain what we should know and check when we want to buy a house</p>
+                            <p class="upload-time">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M9.99 0C4.47 0 0 4.48 0 10C0 15.52 4.47 20 9.99 20C15.52 20 20 15.52 20 10C20 4.48 15.52 0 9.99 0ZM14 14C13.9075 14.0927 13.7976 14.1663 13.6766 14.2164C13.5557 14.2666 13.426 14.2924 13.295 14.2924C13.164 14.2924 13.0343 14.2666 12.9134 14.2164C12.7924 14.1663 12.6825 14.0927 12.59 14L9.3 10.71C9.20551 10.6174 9.13034 10.5069 9.07885 10.3851C9.02735 10.2632 9.00055 10.1323 9 10V6C9 5.45 9.45 5 10 5C10.55 5 11 5.45 11 6V9.59L14 12.59C14.39 12.98 14.39 13.61 14 14Z" fill="#888B97"/>
+                                </svg>
+                                8 min read | 25 Apr 2021
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -239,14 +401,6 @@
         </section>
         <section class="subsribe">
             <div class="subscribe-section">
-                <img class="subscribe-icon-1" src="./icons/avatar-1.jpg" alt="Some icons"/>
-                <img class="subscribe-icon-2" src="./icons/avatar-2.jpg" alt="Some icons"/>
-                <img class="subscribe-icon-3" src="./icons/avatar-6.jpg" alt="Some icons"/>
-                <img class="subscribe-icon-4" src="./icons/avatar-9.jpg" alt="Some icons"/>
-                <img class="subscribe-icon-5" src="./icons/chair.jpg" alt="Some icons"/>
-                <img class="subscribe-icon-6" src="./icons/chair-2.jpg" alt="Some icons"/>
-                <img class="subscribe-icon-7" src="./icons/house-end.jpg" alt="Some icons"/>
-                <img class="subscribe-icon-8" src="./icons/house-modern.jpg" alt="Some icons"/>
                 <p class="subscribe-title">Subscribe For More Info And Updates from Hounter</p>
                 <div class="subscribe-form">
                     <img class="mail" src="./icons/mail.jpeg" alt="Email">
@@ -255,7 +409,7 @@
                     </label>
                     <button id="subscribeButton">Subscribe Now</button>
                 </div>
-                <img class="subscribe-background" src="./backgrounds/subscribe_background.jpeg" alt="Background" />
+                <img class="subscribe-background" src="./backgrounds/subscribe_banner.jpg" alt="Background" />
             </div>
         </section>
     </main>
@@ -303,5 +457,6 @@
         <img class="background-img-blue" src="./backgrounds/footer_bgnd_green.jpeg" alt="Background"/>
         <img class="background-img-green" src="./backgrounds/footer_bgnd_blue.jpeg" alt="Background"/>
     </div>
+
 </body>
 </html>
