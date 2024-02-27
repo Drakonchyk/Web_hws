@@ -49,11 +49,14 @@ select {
     border: 1px solid #FFFFFF4D;
     gap: 10px;
     cursor: pointer;
+    display: flex;
+    position: relative;
 }
 
 button {
     width: 100px;
     white-space: nowrap;
+    justify-content: center;
 }
 
 select {
@@ -86,7 +89,7 @@ select {
     position: relative;
     background-color: #FFFFFF1A;
     color: #F0F3FD;
-    left:-28%;
+    left:-25%;
 }
 
 select .property-option {
@@ -107,6 +110,7 @@ select .property-option {
 
 body {
     font-family: 'Lexend', sans-serif;
+    overflow-x: hidden;
 }
 
 header, button, select {
@@ -940,8 +944,9 @@ td {
     font-family: 'Lexend', sans-serif;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-gap: 5%;
+    grid-gap: 0;
     margin-top: 7%;
+    margin-left: 4%;
 }
 .small-img{
     width: 200px;
